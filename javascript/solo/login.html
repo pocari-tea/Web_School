@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function check()
+    {
+      if(fr.id.value == "")
+      {
+        alert("값을 입력해 주세요.");
+        fr.id.focus(1);
+        return false;
+      }
+      else if(fr.pw.value == "")
+      {
+        alert("값을 입력해 주세요.");
+        fr.pw.focus(1);
+        return false;
+      }
+      alert("로그인 되었습니다.");
+      alert("메인 화면으로 돌아갑니다.")
+      else return true;
+    }
+      location.href=".html"
+    }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1><a href=".html">GAME</a></h1>
+    </center>
+    <center>
+      <form name="fr" onsubmit="return check()">
+        <input type="text" name="id"> <br>
+        <input type="text" name="pw"> <br><br>
+        <input type="submit">
+      </form>
+    </center>
+  </body>
+</html>

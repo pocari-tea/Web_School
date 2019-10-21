@@ -1,0 +1,27 @@
+실시간 코드보기
+
+https://codepen.io/asimryu/professor/EpbBdx/ (Chrome 사용)
+
+웹 리소스 링크들
+http://jquery.com/
+https://jqueryui.com/
+https://getbootstrap.com/
+https://fontawesome.com/
+https://fonts.google.com/
+https://angularjs.org/
+https://angular.io/
+https://emmet.io/
+https://www.google.com/maps
+https://developers.facebook.com/docs/plugins/page-plugin/
+https://html5boilerplate.com/
+HTML5 Templates : https://html5up.net/
+http://generatedata.com/
+
+참고사이트
+https://shortiedesigns.com/2014/03/10-top-principles-effective-web-design/
+https://99designs.com/blog/trends/web-design-trends-2018/
+https://webflow.com/blog/19-web-design-trends-for-2018
+https://www.w3schools.com
+https://colorlib.com/wp/free-bootstrap-registration-forms/
+https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/
+aquerytool.com

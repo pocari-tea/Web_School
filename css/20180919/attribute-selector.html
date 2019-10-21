@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> 속성 선택자 </title>
+    <style type="text/css">
+    p[title^="tree"] {font-weight: bold; color: red;}
+    p[title$="tree"] {font-style: italic;}
+    p[title*="tree"] {background: pink;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <p title="tree_1">div의 첫 번째 자식 p 요소</p>
+      <p title="a_tree_1">div의 두 번째 자식 p 요소</p>
+      <p title="a_tree">div의 세 번째 자식 p 요소</p>
+      <h3 title="tree_1">div의 네 번째 자식 h3 요소</h3>
+    </div>
+  </body>
+</html>

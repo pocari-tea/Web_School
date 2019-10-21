@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>book 객체 만들기</title>
+    <script type="text/javascript">
+      function inquiry()
+      {
+        return this.balance;
+      }
+      function deposit(money)
+      {
+        this.balance += money;
+      }
+      function withdraw(money)
+      {
+        this.balance -= money;
+        return money;
+      }
+
+      var book = new Object();
+      book.owner = "정훈";
+      book.balance = 20000;
+      book.html1 = "HTML5";
+    </script>
+  </head>
+  <body>
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <script type="text/javascript">
+      document.write("book: ");
+      document.write(book.html1 + ", ");
+      document.write(book.owner + ", ");
+      document.write(book.balance + "<br>");
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>초마다 배경색 바꾸기</h3>
+    <script type="text/javascript">
+      var snow = new Date();
+      document.write(snow.toLocaleString() + "<br>");
+      if (snow.getSeconds() % 2 == 0)
+      {
+        document.body.style.backgroundColor = "violet";
+      }
+      else
+      {
+        document.body.style.backgroundColor = "lightskyblue";
+      }
+    </script>
+  </body>
+</html>

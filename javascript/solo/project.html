@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+    .blue{color: blue;}
+    .white{color: white;}
+    .small{font-size: 20px; color: white;}
+    h2
+    {
+      background-: white;
+    }
+    body
+    {
+      padding:0;
+      margin:0;
+      background-image: url(3.jpg);
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      position: relative;
+      overflow-y: auto;
+
+      background-image: url('너의 이름은.png');
+      background-size: cover;
+    }
+    aside
+    {
+             width:300px;
+             height:3000px;
+             color:white;
+             font-size: 25px;
+             overflow:hidden;
+             float:left;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready
+      (
+        function()
+        {
+          var main = $('.bxslider').bxSlider
+            ({
+              mode: 'fade',
+              auto: true, //자동으로 슬라이드
+              controls : true,    //좌우 화살표
+              pause: 3000,
+              slideWidth: 300,
+              speed: 500,
+              });
+        $(".bx-start").hide();    //onload시 시작버튼 숨김.
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <center><h1>
+      <p class="white">JPOP</p></h1></center>
+      <aside>
+        <ul>
+          <a href="project.html" class="white">JPOP</a> <br><br>
+          <a href="vocaloid.html" class="white">VOCALOID란?</a>
+          <li><a href="miku.html" class="small">하츠네 미쿠</a></li>
+          <br>
+          <a href="utaite.html" class="white">우타이테란?</a>
+          <li><a href="mahumahu.html" class="small">마후마후</a></li>
+          <li><a href="glutamine.html" class="small">구루타밍</a></li>
+        </ul>
+
+      </aside>
+      <center>
+    <div style= "height: auto; width: 100%; border-top:1px solid blue;"></div>
+    <h2><p class="white">이 설명은 제 주관적인 의견이 포함되어 있습니다. 어디까지나 참고로 이용해 주시길 바랍니다.</p></h2>
+    <h2><p class="white">홈페이지는 니코니코 동화와 유튜브를 기준으로 합니다.</p></h2>
+    <a href="https://www.nicovideo.jp/"><img src="니코동.png" height="300"></a>
+    <a href="https://www.youtube.com/"><img src="유튜브.png" height="300"></a>
+    <br><br><br><br>
+    <div class="home__slider">
+        <div class="bxslider">
+            <div><img src="1.jpg" alt="그림1"></div>
+            <div><img src="2.jpg" alt="그림2"></div>
+            <div><img src="3.jpg" alt="그림3"></div>
+            <div><img src="4.jpg" alt="그림2"></div>
+        </div>
+    </div>
+  </center>
+  </script>
+  </body>
+</html>

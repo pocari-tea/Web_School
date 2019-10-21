@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>영화</title>
+      <style>
+        table
+        {
+          width: 1000px;
+        }
+        table, th, td
+        {
+          border: 1px solid #F8E0E6;
+          margin: 10px 10px 0px 0px
+        }
+
+      #grid{
+        height: 800px;
+        border-top: 3px solid pink;
+        display:grid;
+        grid-template-columns:150px 10px 10px
+      }
+
+      ul{
+        border-right:  3px solid pink;
+        width:100px;
+        margin:0;
+      }
+
+    </style>
+    <script type="text/javascript">
+    function btn()
+    {
+      var result = confirm("결제 하시겠습니까??");
+      if(result)
+      {
+        alert("로그인을 해주세요.")
+        location.href="login.html"
+      }
+      else
+      {
+        alert("장난치지마!")
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <center><h1><a href="영화 페이지.html">Daily Movie</a></h1></center>
+    <div align= "right">
+      <button type="button">
+        <a href="login.html">로그인</a>
+      </button>
+    </div>
+      <div id="grid">
+        <ul> <br>
+          <li>영화소개</li>
+          <li>평점</li>
+          <li><b><a href="web1.html">예매</a></b></li>
+        </ul>
+        <br>
+        <div>
+          <table>
+              <tr>
+                <th width="100px">영화 선택</th>
+                <th width="100px">극장 선택</th>
+                <th width= "400px">상영 시간</th>
+                <th>영화 정보</th>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    영화1<input type="radio" name="movie" value="a"> <br>
+                    영화2<input type="radio" name="movie" value="a"> <br>
+                    영화3<input type="radio" name="movie" value="c"> <br>
+                  </form>
+                </td>
+                <td>
+                  <form>
+                    극장1<input type="radio" name="theater" value="a"> <br>
+                    극장2<input type="radio" name="theater" value="a"> <br>
+                    극장3<input type="radio" name="theater" value="c"> <br>
+                  </form>
+                </td>
+                <td>
+                  1관
+                  <br>
+                  <form>
+                    7:00<input type="radio" name="time">
+                    9:00 <input type="radio" name="time">
+                    11:00<input type="radio" name="time">
+                    13:00<input type="radio" name="time">
+                    15:00<input type="radio" name="time">
+                    17:00<input type="radio" name="time">
+                  <br><br>
+                  2관
+                  <br>
+                    8:00<input type="radio" name="time">
+                    10:00<input type="radio" name="time">
+                    12:00<input type="radio" name="time">
+                    14:00<input type="radio" name="time">
+                    16:00<input type="radio" name="time">
+                    18:00<input type="radio" name="time">
+                  </form>
+                </td>
+                <td><center><img src = "창궐.jpeg"></center></td>
+              </tr>
+              <tr>
+                <th colspan="2">날짜 선택</th>
+                <th>인원 선택</th>
+                <td rowspan ="3">
+                  별점:5.7 <br>
+                  날짜:를 하고 싶지만 데이터 관련은 배우지 못해서 적용을 시키지 못한다. <br>
+                  인원: 마찬가지 <br>
+                  금액:마찬가지 <br>
+                  <center>
+                    <button type="button"   onclick="javascript:btn()">
+                      예매
+                    </button>
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2">
+                  <form>
+                    <input type="date"value="2018-10-24">
+                  </form>
+                </td>
+                  <td>
+                    <form>
+                      성인
+                      <br>
+                      0<input type="radio" name="people">
+                      1<input type="radio" name="people">
+                      2<input type="radio" name="people">
+                      3<input type="radio" name="people">
+                      4<input type="radio" name="people">
+                      5<input type="radio" name="people">
+                      6<input type="radio" name="people">
+                      7<input type="radio" name="people">
+                      8<input type="radio" name="people">
+                      9<input type="radio" name="people">
+                  </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  청소년
+                  <br>
+                  <form>
+                    0<input type="radio" name="people1">
+                    1<input type="radio" name="people1">
+                    2<input type="radio" name="people1">
+                    3<input type="radio" name="people1">
+                    4<input type="radio" name="people1">
+                    5<input type="radio" name="people1">
+                    6<input type="radio" name="people1">
+                    7<input type="radio" name="people1">
+                    8<input type="radio" name="people1">
+                    9<input type="radio" name="people1">
+                  </form>
+                </td>
+              </tr>
+            </table>
+    </div>
+  </body>
+</html>

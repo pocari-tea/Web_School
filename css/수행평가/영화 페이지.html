@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>영화</title>
+      <style>
+      body
+      {
+        background-repeat: no-repeat;
+        background-image: url('ani.jpg');
+        background-size: 100%;
+      }
+      #grid{
+        height: 800px;
+        border-top: 3px solid pink;
+
+        display:grid;
+        grid-template-columns:150px 200px 200px 200px 200px 200px
+      }
+      ul{
+        border-right:  3px solid pink;
+        width:100px;
+        margin:0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <center><h1><a href="영화 페이지.html">Daily Movie</a></h1></center>
+    <div align= "right">
+      <button type="button">
+        <a href="login.html">로그인</a>
+      </button>
+    </div>
+      <div id="grid">
+        <ul> <br>
+          <li>영화소개</li>
+          <li>평점</li>
+          <li><a href="ticketing.html">예매</a></li>
+        </ul>
+        <img src="암수살인.jpg" width="175" height="250" style="padding-top:10px">
+        <img src="창궐.jpg" width="175" height="250" style="padding-top:10px">
+        <img src="베놈.jpg" width="175" height="250" style="padding-top:10px">
+        <img src="완벽한 타인.jpg" width="175" height="250" style="padding-top:10px">
+        <img src="스타이즈본.jpg" width="175" height="250" style="padding-top:10px">
+    </div>
+  </body>
+</html>
